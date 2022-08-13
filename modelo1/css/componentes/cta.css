@@ -1,0 +1,105 @@
+
+/* -----CTA---*/
+.cta__container{
+    background-color: var(--cor-terciaria);
+    margin-top:  7.5rem;
+    margin-bottom:  7.5rem;
+}
+
+.cta__bloco{
+    grid-column:  4/ span 6;
+    height: 24.75rem;
+    text-align: center;
+    color: var(--branco);
+    display: grid;
+    align-content: center;
+}
+
+.cta__bloco__titulo{
+    font-family: var(--font-darker);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 100%;
+    color: var(--branco);
+    margin:0;
+}
+
+.cta__bloco__texto{
+    font-family: var(--font-nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    color: var(--branco);
+    margin-top:1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.cta__bloco__button{
+    text-decoration: none;
+    justify-content: center;
+}
+
+.cta__bloco__button__bt{
+    width: 16rem;
+    padding: 0.5rem 1.5rem;
+    background: var(--base-claro);
+    color: var(--cor-terciaria);
+}
+
+.cta__bloco__button__bt:hover{
+    background: var(--cor-primaria);
+    color: var(--base-claro);
+
+}
+
+/*__________________________screens_____________________________________________*/
+
+/*__________________________mobile_____________________________________________*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .cta__container{
+    margin-top: 0rem;
+    margin-bottom: 7.5rem;
+    }
+    .cta__bloco{
+        padding: 1rem;
+        width: 90%;
+    }
+.cta__bloco__texto, .cta__bloco__titulo{
+    width: 90%;
+    justify-self: center;
+
+}
+
+
+}
+
+/*__________________________tablet_____________________________________________*/
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+
+
+}
+
+
+/*__________________________notebook_____________________________________________*/
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+
+}
+
+
+
+/*__________________________telas maiores_____________________________________________*/
+
+@media only screen and (min-width: 1025px){
+
+
+}

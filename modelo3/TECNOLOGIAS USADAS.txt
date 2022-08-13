@@ -1,0 +1,7 @@
+Linguagens
+HTML
+Tailwindcss
+Javascript
+
+Metodologias 
+BEM - nomeação de classes

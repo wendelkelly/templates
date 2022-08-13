@@ -1,0 +1,135 @@
+.together{
+    height: 20.68rem;
+    left: 0rem;
+    top: 45.62rem;
+    background: var(--cor-terciaria);
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    background-position: top;
+}
+
+.together__texto__h3{
+    font-family: var(--font-darker);
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2rem;
+    line-height: 110%;
+    color: var(--branco);
+    width: 100%;
+    height: 2.18rem;
+
+}
+
+.together__texto__p{
+    font-family: var(--font-nunito);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 150%;
+    width: 100%;
+    height: 7rem;
+    color: var(--branco);
+}
+
+.together__texto{
+    grid-column: 1 / 8;
+    grid-row: none;
+    width: 70%;
+}
+
+/*__________________________screens_____________________________________________*/
+
+/*__________________________mobile_____________________________________________*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+
+    .together{
+        top: 0rem;
+        position: inherit;
+         
+        width: 100%;
+
+    }
+    .together__texto{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 95%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        
+    }
+
+    .together__texto__h3{
+
+        width: 95%;
+
+        padding-bottom: 1rem;
+
+    }
+    
+    .together__texto__p{
+
+        width: 95%;
+
+    }
+}
+
+/*__________________________tablet_____________________________________________*/
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .together{
+        top: 0rem;
+        position: inherit;
+         
+        width: 100%;
+
+    }
+    .together__texto{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 95%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        grid-column: 1 / span 13;
+        
+    }
+
+    .together__texto__h3{
+       
+        width: 95%;
+
+        padding-bottom: 1rem;
+
+    }
+    
+    .together__texto__p{
+
+        width: 95%;
+
+    }
+
+
+}
+
+
+/*__________________________notebook_____________________________________________*/
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+
+}
+
+
+
+/*__________________________telas maiores_____________________________________________*/
+
+@media only screen and (min-width: 1025px){
+
+
+}

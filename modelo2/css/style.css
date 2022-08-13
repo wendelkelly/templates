@@ -1,0 +1,1139 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: rgba(244, 244, 245, 0.3294117647);
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1.5rem;
+}
+
+/*__________________________screens_____________________________________________*/
+/*__________________________mobile_____________________________________________*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+}
+/*__________________________tablet_____________________________________________*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: 90%;
+  }
+}
+/*__________________________notebook_____________________________________________*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: 80%;
+  }
+}
+/*__________________________telas maiores_____________________________________________*/
+@media only screen and (min-width: 1025px) {
+  .container {
+    max-width: 80%;
+  }
+}
+/*-- cards-*/
+.cards .cards__container__titulo {
+  padding-bottom: 1rem;
+}
+.cards .cards__container__titulo .cards__titulo {
+  grid-column: 1/6;
+}
+.cards .cards__container__titulo .cards__titulo .cards__titulo__h2 {
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 100%;
+  color: #000000;
+  width: 100%;
+  height: 2rem;
+  left: 6.75rem;
+  top: 130.18rem;
+}
+.cards .cards__container .cards__box {
+  display: contents;
+  margin-bottom: 7.5rem;
+}
+.cards .cards__container .cards__box .cards__itens {
+  background: #ffffff;
+  box-shadow: 0rem 0.25rem 0.75rem rgba(33, 36, 41, 0.14);
+  border-radius: 0.125px;
+  grid-column: span 4;
+  max-width: 100%;
+  padding: 1.5rem;
+}
+.cards .cards__container .cards__box .cards__itens .cards_itens_icons {
+  width: 2rem;
+  height: 2rem;
+  left: 1.5rem;
+  top: 1.5rem;
+  background: rgba(244, 244, 245, 0.3294117647);
+  padding: 0.6rem;
+  border-radius: 0.9rem;
+}
+.cards .cards__container .cards__box .cards__itens .cards_itens_title {
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 110%;
+  color: #212429;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  left: 1.5rem;
+  top: 6.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.cards .cards__container .cards__box .cards__itens .cards_itens_texto {
+  position: static;
+  width: 100%;
+  height: 9rem;
+  left: 1.5rem;
+  top: 14.06rem;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 1rem 0rem;
+}
+
+/*__________________________screens_____________________________________________*/
+/*__________________________mobile_____________________________________________*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .cards .cards__container__titulo {
+    padding-bottom: 1rem;
+  }
+  .cards .cards__container__titulo .cards__titulo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .cards .cards__container {
+    width: 90%;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+  .cards .cards__container .cards__box .cards__itens .cards_itens_texto {
+    margin: 0rem 0rem;
+  }
+}
+/*__________________________tablet_____________________________________________*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .cards .cards__container__titulo {
+    padding-bottom: 1rem;
+  }
+  .cards .cards__container__titulo .cards__titulo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .cards .cards__container {
+    width: 90%;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cards .cards__container .cards__box .cards__itens .cards_itens_texto {
+    margin: 0rem 0rem;
+  }
+}
+/*__________________________notebook_____________________________________________*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .cards .cards__container__titulo {
+    padding-bottom: 1rem;
+  }
+  .cards .cards__container__titulo .cards__titulo {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    grid-column: 1/12;
+  }
+  .cards .cards__container {
+    width: 90%;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cards .cards__container .cards__box .cards__itens {
+    grid-column: span 6;
+  }
+  .cards .cards__container .cards__box .cards__itens .cards_itens_texto {
+    margin: 0rem 0rem;
+  }
+}
+/*__________________________telas maiores_____________________________________________*/
+.button {
+  height: 2.5rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.button:hover {
+  transition-duration: 0.5s;
+}
+
+/*__________________________screens_____________________________________________*/
+/*__________________________mobile_____________________________________________*/
+/*__________________________tablet_____________________________________________*/
+/*__________________________notebook_____________________________________________*/
+/*__________________________telas maiores_____________________________________________*/
+/* -----CTA---*/
+.cta .cta__container {
+  background-color: #544179;
+  margin-top: 7.5rem;
+  margin-bottom: 7.5rem;
+}
+.cta .cta__container .cta__bloco {
+  grid-column: 4/span 6;
+  height: 24.75rem;
+  text-align: center;
+  color: #ffffff;
+  display: grid;
+  align-content: center;
+}
+.cta .cta__container .cta__bloco .cta__bloco__titulo {
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 100%;
+  color: #ffffff;
+  margin: 0;
+}
+.cta .cta__container .cta__bloco .cta__bloco__texto {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #ffffff;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+.cta .cta__container .cta__bloco .cta__bloco__button {
+  text-decoration: none;
+  justify-content: center;
+}
+.cta .cta__container .cta__bloco .cta__bloco__button .cta__bloco__button__bt {
+  width: 16rem;
+  padding: 0.5rem 1.5rem;
+  background: #F1F3F5;
+  color: #544179;
+}
+.cta .cta__container .cta__bloco .cta__bloco__button .cta__bloco__button__bt:hover {
+  background: #B983FF;
+  color: #F1F3F5;
+}
+
+/*__________________________screens_____________________________________________*/
+/*__________________________mobile_____________________________________________*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .cta .cta__container {
+    margin-top: 0rem;
+    margin-bottom: 7.5rem;
+  }
+  .cta .cta__container .cta__bloco {
+    padding: 1rem;
+    width: 90%;
+  }
+  .cta .cta__container .cta__bloco .cta__bloco__texto {
+    width: 90%;
+    justify-self: center;
+  }
+  .cta .cta__container .cta__bloco .cta__bloco__titulo {
+    width: 90%;
+    justify-self: center;
+  }
+}
+/*__________________________tablet_____________________________________________*/
+/*__________________________notebook_____________________________________________*/
+/*__________________________telas maiores_____________________________________________*/
+/* footer*/
+.footer {
+  align-items: center;
+  justify-content: space-between;
+  height: 10rem;
+  background: #ffffff;
+  box-shadow: 0rem -0.06rem 0.75rem rgba(33, 36, 41, 0.14);
+}
+.footer .footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__container .footer__logo .footer__logo__img {
+  width: 9.37rem;
+}
+.footer .footer__container .footer__redes {
+  display: flex;
+  align-items: center;
+}
+.footer .footer__container .footer__redes a .footer__redes__itens {
+  height: 2rem;
+  display: inline-block;
+  padding-left: 0.93rem;
+}
+
+/*__________________________screens_____________________________________________*/
+/*__________________________mobile_____________________________________________*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .footer {
+    height: 100%;
+  }
+  .footer .footer__container {
+    justify-content: center;
+  }
+  .footer .footer__container .footer__redes {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
+}
+/*__________________________tablet_____________________________________________*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .footer {
+    height: 100%;
+  }
+  .footer .footer__container {
+    justify-content: center;
+  }
+  .footer .footer__container .footer__redes {
+    margin-top: 1.5em;
+  }
+}
+/*__________________________notebook_____________________________________________*/
+/*__________________________telas maiores_____________________________________________*/
+.formulario {
+  grid-column: 8/span 5;
+  grid-row: span 2;
+  margin-top: 2.18rem;
+  width: 31rem;
+  height: 55rem;
+  background: #ffffff;
+  box-shadow: 0rem 0.25rem 0.75rem rgba(33, 36, 41, 0.14);
+  border-radius: 0.125rem;
+}
+.formulario .formulario__topo {
+  text-align: center;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+.formulario .formulario__topo .formulario__topo__texto {
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 110%;
+  width: 28rem;
+  left: 53.75rem;
+  top: 10rem;
+  color: #212429;
+}
+.formulario .formulario__dados {
+  width: 28rem;
+  left: 0rem;
+  top: 0rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+}
+.formulario .formulario__dados .formulario__dados__label {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #000000;
+  width: 28rem;
+  height: 1.5rem;
+}
+.formulario .formulario__dados .formulario__dados__input {
+  width: 100%;
+  height: 2.5rem;
+  left: 0rem;
+  right: 0rem;
+  top: 0rem;
+  border: 0.06rem solid #000000;
+  box-sizing: border-box;
+  background: #ffffff;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.87rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.3rem;
+}
+.formulario .formulario__dados .formulario__dados__radio_texto {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #212429;
+  display: inline-flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.formulario .formulario__dados .formulario__dados__radio {
+  margin-right: 0.62rem;
+}
+.formulario .formulario__dados .formulario__dados__select {
+  width: 100%;
+  height: 2.5rem;
+  left: 0rem;
+  right: 0rem;
+  top: 0rem;
+  border: 0.06rem solid #000000;
+  box-sizing: border-box;
+  background: #ffffff;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.87rem;
+  line-height: 1.25rem;
+  margin-bottom: 0.75rem;
+  border-radius: 0.3rem;
+}
+.formulario .formulario__dados .formulario__politcs .formulario__politcs_container {
+  width: 90%;
+  height: 5.62rem;
+  left: 53.75rem;
+  top: 62.81rem;
+}
+.formulario .formulario__dados .formulario__politcs .formulario__politcs_container .formulario__politcs_itens {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  color: #7E8A98;
+  list-style: disc;
+}
+.formulario .formulario__dados .formulario__button__bt {
+  align-items: center;
+  background: #B983FF;
+  color: #ffffff;
+  border: none;
+  display: flex;
+  flex-direction: row;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-size: 1rem;
+  font-weight: 800;
+  height: 2.5rem;
+  justify-content: center;
+  left: 0rem;
+  letter-spacing: 0.04em;
+  line-height: 150%;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  top: 0rem;
+  width: 28rem;
+}
+.formulario .formulario__dados .formulario__button__bt:hover {
+  background: #39A2DB;
+  color: #ffffff;
+  transition-duration: 0.5s;
+}
+
+/*__________________________screens_____________________________________________*/
+/*__________________________mobile_____________________________________________*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .hero__container {
+    justify-content: center;
+  }
+  .hero__container .formulario {
+    width: 90%;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+  }
+  .hero__container .formulario .formulario__topo .formulario__topo__texto {
+    width: 90%;
+  }
+  .hero__container .formulario .formulario__dados {
+    width: 90%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hero__container .formulario .formulario__dados .formulario__button__bt {
+    width: 90%;
+  }
+  .hero__container .formulario .formulario__dados .formulario__button {
+    display: flex;
+    justify-content: center;
+  }
+}
+/*__________________________tablet_____________________________________________*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .hero__container {
+    justify-content: center;
+  }
+  .hero__container .formulario {
+    width: 90%;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    grid-column: 2/span 13;
+  }
+  .hero__container .formulario .formulario__topo .formulario__topo__texto {
+    width: 90%;
+  }
+  .hero__container .formulario .formulario__dados {
+    width: 90%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hero__container .formulario .formulario__dados .formulario__button__bt {
+    width: 90%;
+  }
+  .hero__container .formulario .formulario__dados .formulario__button {
+    display: flex;
+    justify-content: center;
+  }
+}
+/*__________________________notebook_____________________________________________*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero__container {
+    justify-content: center;
+  }
+  .hero__container .formulario {
+    width: 90%;
+    margin-top: 0rem;
+    margin-bottom: 2rem;
+    grid-column: 7/13;
+  }
+  .hero__container .formulario .formulario__topo .formulario__topo__texto {
+    width: 90%;
+  }
+  .hero__container .formulario .formulario__dados {
+    width: 90%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  .hero__container .formulario .formulario__dados .formulario__button__bt {
+    width: 90%;
+  }
+  .hero__container .formulario .formulario__dados .formulario__button {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}
+/*__________________________telas maiores_____________________________________________*/
+.header {
+  background: #ffffff;
+  width: 100%;
+  height: 5.87rem;
+  box-shadow: 0rem 0.25rem 0.75rem rgba(33, 36, 41, 0.14);
+}
+.header .header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.header .header__container .header__logo {
+  height: 5.43rem;
+}
+.header .header__container .header__nav .header__navbar {
+  overflow: hidden;
+}
+.header .header__container .header__nav .header__navbar .header__navbar__menu-a {
+  float: left;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 100%;
+  color: #000000;
+  text-decoration: none;
+  padding: 1rem 1.56rem;
+}
+.header .header__container .header__nav .header__navbar .header__navbar__menu-a:hover {
+  color: #39A2DB;
+  transition-duration: 0.5s;
+}
+.header .header__container .header__nav .header__navbar .header__navbar__menu-bt {
+  float: left;
+  overflow: hidden;
+}
+.header .header__container .header__nav .header__navbar .header__navbar__menu-bt .header__navbar__menu-bt__menu {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  color: #000000;
+  padding: 1rem 1.56rem;
+  background-color: inherit;
+  margin: 0;
+  line-height: 100%;
+  text-decoration: none;
+}
+.header .header__container .header__nav .header__navbar .header__navbar__menu-bt .header__navbar__menu-bt__menu:hover {
+  color: #39A2DB;
+  transition-duration: 0.5s;
+}
+.header .header__container .header__hamburguer .hamburger__menu #menu__toggle {
+  opacity: 0;
+}
+.header .header__container .header__hamburguer .hamburger__menu #menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+.header .header__container .header__hamburguer .hamburger__menu #menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+.header .header__container .header__hamburguer .hamburger__menu #menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+.header .header__container .header__hamburguer .hamburger__menu #menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.header .header__container .header__hamburguer .hamburger__menu .menu__btn {
+  position: absolute;
+  width: 1.62rem;
+  height: 1.62rem;
+  cursor: pointer;
+  z-index: 1;
+}
+.header .header__container .header__hamburguer .hamburger__menu .menu__btn span {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #000000;
+  transition-duration: 0.25s;
+}
+.header .header__container .header__hamburguer .hamburger__menu .menu__btn span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #000000;
+  transition-duration: 0.25s;
+  content: "";
+  top: 0.5rem;
+}
+.header .header__container .header__hamburguer .hamburger__menu .menu__btn span::before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #000000;
+  transition-duration: 0.25s;
+  content: "";
+  top: -0.5rem;
+}
+.header .header__container .header__hamburguer .hamburger__menu .menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 18.75rem;
+  height: 100%;
+  margin: 0;
+  padding: 0rem 0rem 0rem 1rem;
+  list-style: none;
+  background-color: #ffffff;
+  box-shadow: 0.125rem 0.125rem 0.375rem rgba(0, 0, 0, 0.4);
+  transition-duration: 0.25s;
+}
+.header .header__container .header__hamburguer .hamburger__menu .menu__box .menu__item {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #000000;
+  text-decoration: none;
+  transition-duration: 0.25s;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 100%;
+  color: #000000;
+}
+.header .header__container .header__hamburguer .hamburger__menu .menu__box .menu__item:hover {
+  color: #B983FF;
+}
+
+/*__________________________screens_____________________________________________*/
+/*__________________________mobile_____________________________________________*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .header .header__container {
+    justify-content: space-between;
+  }
+  .header .header__container .header__logo {
+    margin-left: 2rem;
+  }
+  .header .header__container .header__nav {
+    margin-right: 4rem;
+  }
+  .header .header__container .header__nav .header__navbar {
+    display: none;
+  }
+}
+/*__________________________tablet_____________________________________________*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .header .header__container {
+    justify-content: space-between;
+  }
+  .header .header__container .header__logo {
+    margin-left: 2rem;
+  }
+  .header .header__container .header__nav {
+    margin-right: 4rem;
+  }
+  .header .header__container .header__nav .header__navbar {
+    display: none;
+  }
+}
+/*__________________________notebook_____________________________________________*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .header .header__container .header__nav .header__hamburguer {
+    display: none;
+  }
+}
+/*__________________________telas maiores_____________________________________________*/
+@media only screen and (min-width: 1025px) {
+  .header .header__container .header__nav .header__hamburguer {
+    display: none;
+  }
+}
+/*--HERO-*/
+.hero {
+  grid-template-rows: 2;
+  height: 60.5rem;
+  margin-top: 1rem;
+}
+.hero .hero__container .hero__texto {
+  grid-column: 1/8;
+}
+.hero .hero__container .hero__texto .hero__texto__h1 {
+  width: 100%;
+  margin-bottom: 6rem;
+  margin-top: 6rem;
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 100%;
+  color: #212429;
+}
+.hero .hero__container .hero__texto .hero__texto__h1 .hero__texto__span {
+  color: #39A2DB;
+}
+.hero .hero__container .hero__texto .hero__texto__p {
+  width: 100%;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 150%;
+}
+
+/*__________________________screens_____________________________________________*/
+/*__________________________mobile_____________________________________________*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .hero {
+    height: 100%;
+  }
+  .hero .hero__container .hero__texto {
+    justify-content: center;
+    width: 90%;
+  }
+  .hero .hero__container .hero__texto .hero__texto__h1 {
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+  }
+}
+/*__________________________tablet_____________________________________________*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    height: 100%;
+  }
+  .hero .hero__container {
+    justify-content: center;
+  }
+  .hero .hero__container .hero__texto {
+    justify-content: center;
+    text-align: center;
+    grid-column: 1/span 13;
+  }
+  .hero .hero__container .hero__texto .hero__texto__h1 {
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+  }
+}
+/*__________________________notebook_____________________________________________*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    height: 100%;
+  }
+  .hero .hero__container {
+    justify-content: center;
+  }
+  .hero .hero__container .hero__texto {
+    justify-content: center;
+    grid-column: 1/6;
+  }
+  .hero .hero__container .hero__texto .hero__texto__h1 {
+    margin-bottom: 2.5rem;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+  }
+}
+/*__________________________telas maiores_____________________________________________*/
+/*--List-*/
+.list .list__container {
+  grid-column: 8/span 12;
+  margin-top: 3rem;
+}
+.list .list__container .list_imagem {
+  grid-column: 1/span 6;
+  width: 100%;
+}
+.list .list__container .list_imagem .list_imagem_img {
+  width: 100%;
+  max-width: 34rem;
+}
+.list .list__container .list__texto {
+  grid-column: 8/span 4;
+  width: 100%;
+}
+.list .list__container .list__texto .list__texto__titulo {
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 110%;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  margin-top: 0rem;
+  margin-bottom: 1.5rem;
+}
+.list .list__container .list__texto .list__texto__subtitulo {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 140%;
+  color: #212429;
+  top: 86.18rem;
+}
+.list .list__container .list__texto .list__texto__lista {
+  padding-left: 1.62rem;
+}
+.list .list__container .list__texto .list__texto__lista .list__texto__lista__itens {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  color: #212429;
+  padding-bottom: 1.5rem;
+}
+.list .list__container .list__texto .list__texto__lista .list__texto__lista__itens::marker {
+  content: " ✔  ";
+  color: #544179;
+}
+.list .list__container .list__texto .list__texto__lista .list__texto__lista__itens .list__texto__lista__destaque {
+  font-weight: 700;
+}
+
+/*__________________________screens_____________________________________________*/
+/*__________________________mobile_____________________________________________*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .list .list__container {
+    justify-content: center;
+  }
+  .list .list__container .list_imagem {
+    width: 90%;
+  }
+  .list .list__container .list__texto {
+    width: 90%;
+  }
+}
+/*__________________________tablet_____________________________________________*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .list .list__container {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .list .list__container .list_imagem {
+    width: 90%;
+    order: 1;
+  }
+  .list .list__container .list__texto {
+    width: 90%;
+    order: 2;
+  }
+}
+/*__________________________notebook_____________________________________________*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .list .list__container {
+    margin-top: 6rem;
+  }
+}
+/*__________________________telas maiores_____________________________________________*/
+.together {
+  height: 20.68rem;
+  left: 0rem;
+  top: 45.62rem;
+  background: #544179;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  background-position: top;
+}
+.together .together__container .together__texto {
+  grid-column: 1/8;
+  grid-row: none;
+  width: 70%;
+}
+.together .together__container .together__texto .together__texto__h3 {
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 110%;
+  color: #ffffff;
+  width: 100%;
+  height: 2.18rem;
+  left: 6.75rem;
+  top: 50.62rem;
+}
+.together .together__container .together__texto .together__texto__p {
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 150%;
+  width: 100%;
+  height: 7rem;
+  left: 6.75rem;
+  top: 54.31rem;
+  color: #ffffff;
+}
+
+/*__________________________screens_____________________________________________*/
+/*__________________________mobile_____________________________________________*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .together {
+    top: 0rem;
+    position: inherit;
+    width: 100%;
+  }
+  .together .together__container .together__texto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .together .together__container .together__texto .together__texto__h3 {
+    width: 95%;
+    padding-bottom: 1rem;
+  }
+  .together .together__container .together__texto .together__texto__p {
+    width: 95%;
+  }
+}
+/*__________________________tablet_____________________________________________*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .together {
+    top: 0rem;
+    position: inherit;
+    width: 100%;
+  }
+  .together .together__container .together__texto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 95%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    grid-column: 1/span 13;
+  }
+  .together .together__container .together__texto .together__texto__h3 {
+    width: 95%;
+    padding-bottom: 1rem;
+  }
+  .together .together__container .together__texto .together__texto__p {
+    width: 95%;
+  }
+}
+/*__________________________notebook_____________________________________________*/
+/*__________________________telas maiores_____________________________________________*/
+.video {
+  background-color: #B983FF;
+  width: 100%;
+  background-position: left;
+  margin-bottom: 9.37rem;
+  margin-top: 9.37rem;
+}
+.video .video__container {
+  width: 100%;
+  height: 19.81rem;
+}
+.video .video__container .video__titulo {
+  grid-column: 1/6;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+.video .video__container .video__titulo .video__titulo__h3 {
+  grid-column: 1/6;
+  font-family: "Darker Grotesque";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.5rem;
+  line-height: 110%;
+  color: #ffffff;
+  width: 100%;
+  height: 6.56rem;
+  left: 6.75rem;
+  top: 235.18rem;
+}
+.video .video__container .video__titulo .video__button__link {
+  text-decoration: none;
+}
+.video .video__container .video__titulo .video__button__link .video__button {
+  grid-column: 1/6;
+  width: 256px;
+  background: #ffffff;
+  display: flex;
+  color: #544179;
+}
+.video .video__container .video__titulo .video__button__link .video__button:hover {
+  background: #544179;
+  color: #ffffff;
+}
+.video .video__container .video__thumb {
+  grid-column: 8/span 5;
+  width: 40.56rem;
+  height: 22.81rem;
+  margin-top: -1.5rem;
+}
+.video .video__container .video__thumb .video__thumb_img {
+  width: 100%;
+}
+
+/*__________________________screens_____________________________________________*/
+/*__________________________mobile_____________________________________________*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .video {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .video .video__container {
+    width: 100%;
+    height: 100%;
+  }
+  .video .video__container .video__titulo {
+    grid-column: 1;
+    order: 2;
+    padding-bottom: 2rem;
+  }
+  .video .video__container .video__titulo .video__titulo__h3 {
+    width: 90%;
+  }
+  .video .video__container .video__thumb {
+    order: 1;
+    margin-top: 1rem;
+    height: 100%;
+    padding: 1rem;
+  }
+}
+/*__________________________tablet_____________________________________________*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .video {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .video .video__container {
+    width: 100%;
+    height: 100%;
+  }
+  .video .video__container .video__titulo {
+    grid-column: 2;
+    order: 2;
+    padding-bottom: 2rem;
+    grid-column: 1/span 13;
+  }
+  .video .video__container .video__titulo .video__titulo__h3 {
+    width: 90%;
+  }
+  .video .video__container .video__thumb {
+    order: 1;
+    margin-top: 1rem;
+    height: 100%;
+    padding: 1rem;
+    grid-column: 1/span 13;
+    width: 100%;
+    justify-self: center;
+  }
+}
+/*__________________________notebook_____________________________________________*/
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .video {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  .video .video__container {
+    width: 100%;
+    height: 100%;
+  }
+  .video .video__container .video__titulo {
+    padding-bottom: 2rem;
+    grid-column: 1;
+  }
+  .video .video__container .video__titulo .video__titulo__h3 {
+    width: 90%;
+  }
+  .video .video__container .video__thumb {
+    margin-top: 1rem;
+    height: 100%;
+    padding: 1rem;
+    grid-column: 2/13;
+    width: 100%;
+  }
+}
+/*__________________________telas maiores_____________________________________________*/
+@media only screen and (min-width: 1025px) {
+  .video .video__container .video__titulo {
+    padding-bottom: 2rem;
+    grid-column: 1;
+  }
+}/*# sourceMappingURL=style.css.map */

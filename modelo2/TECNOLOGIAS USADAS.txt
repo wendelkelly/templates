@@ -1,0 +1,8 @@
+Linguagens
+HTML
+SASS
+
+
+
+Metodologias 
+BEM - nomeação de classes

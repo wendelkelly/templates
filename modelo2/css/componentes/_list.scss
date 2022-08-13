@@ -1,0 +1,160 @@
+@mixin font-nunito {
+    font-family: $font-nunito;
+    font-style: normal;
+    font-weight: 400;
+}
+/*--List-*/
+.list{
+    .list__container{
+        grid-column: 8/ span 12;
+        margin-top: 3rem;
+    
+        .list_imagem{
+            grid-column:  1 / span 6;
+            width: 100%;
+            .list_imagem_img{
+                width: 100%;
+                max-width: 34rem;
+            }
+        }
+        .list__texto{
+            grid-column: 8 / span 4;
+            width: 100%;
+    
+            .list__texto__titulo{
+                font-family: $font-darker;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 2rem;
+                line-height: 110%;
+                color: $preto;
+                display: flex;
+                align-items: center;
+                margin-top: 0rem;
+                margin-bottom: 1.5rem;    
+            }
+            
+            .list__texto__subtitulo{
+                @include font-nunito();
+                font-size: 1.25rem;
+                line-height: 140%;
+                color: $base-escuro;
+                
+            }
+            
+            .list__texto__lista{
+                padding-left: 1.62rem;
+                .list__texto__lista__itens{
+                    @include font-nunito();
+                    font-size: 1rem;
+                    line-height: 150%;
+                    color: $base-escuro;
+                    padding-bottom: 1.5rem;
+    
+                    &::marker{
+                        
+                       content: " ✔  ";
+                       color: $cor-terciaria;
+                        
+                    }
+                    
+    
+                    .list__texto__lista__destaque{
+                        font-weight: 700;
+                    }
+                }
+            }
+    
+    
+        }
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*__________________________screens_____________________________________________*/
+
+/*__________________________mobile_____________________________________________*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .list{
+        .list__container{
+            justify-content: center;
+    
+            .list_imagem{
+                width: 90%;
+            }
+            .list__texto{
+                width: 90%;
+            }
+        }
+    }
+
+
+
+    
+
+}
+
+/*__________________________tablet_____________________________________________*/
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .list{
+        .list__container{
+
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+    
+            .list_imagem{
+                width: 90%;
+                order: 1;
+            }
+            .list__texto{
+                width: 90%;
+                order: 2;
+            }
+        
+        }
+    }
+
+
+}
+
+
+/*__________________________notebook_____________________________________________*/
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .list{
+        .list__container{
+            margin-top: 6rem;
+            
+        }
+    }
+
+
+}
+
+
+
+/*__________________________telas maiores_____________________________________________*/
+
+@media only screen and (min-width: 1025px){
+
+
+}

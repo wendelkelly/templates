@@ -1,0 +1,21 @@
+:root{
+    /*Cores*/
+    --preto:#000000;
+    --branco: #ffffff;
+
+    --cor-primaria: #F4CA6D;
+    --cor-secundaria:#FF6363;
+    --cor-terciaria:#125B50;
+
+    --base-escuro:#212429;
+    --base-medio:#7E8A98;
+    --base-fundo:#f4f4f554;
+    --base-claro:#F1F3F5;
+
+
+
+    /*Fontes*/
+    --font-nunito:'Nunito Sans';
+    --font-darker:'Darker Grotesque';
+
+}

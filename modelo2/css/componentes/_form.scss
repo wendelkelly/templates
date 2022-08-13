@@ -1,0 +1,312 @@
+@mixin font-nunito {
+    font-family: $font-nunito;
+    font-style: normal;
+}
+
+@mixin input {
+    width: 100%;
+    height: 2.5rem;
+    border: 0.06rem solid $preto;
+    box-sizing: border-box;
+    background: $branco; 
+
+    @include font-nunito();
+    font-weight: 400;
+
+    font-size: 0.87rem;
+    line-height: 1.25rem;
+    margin-bottom: 0.75rem;
+    border-radius: 0.3rem;
+    
+}
+
+
+
+
+.formulario{ 
+    grid-column: 8 / span 5;
+    grid-row: span 2;
+    margin-top: 2.18rem;
+    width: 31rem;
+    height: 55rem;
+    background: $branco;
+    box-shadow: 0rem 0.25rem 0.75rem rgba(33, 36, 41, 0.14);
+    border-radius: 0.125rem;
+    
+    .formulario__topo{
+        text-align: center;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+
+        .formulario__topo__texto{
+            font-family: $font-darker;
+            font-style: normal;
+            font-weight: 800;
+
+            font-size: 1.5rem;
+            line-height: 110%;
+            width: 28rem;
+            color: $base-escuro;
+        }
+    }
+
+    .formulario__dados{
+        width: 28rem;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+
+        .formulario__dados__label{
+            @include font-nunito();
+            font-weight: 700;
+
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: $preto;
+            width: 28rem;
+            height: 1.5rem;
+        
+        }
+        
+        .formulario__dados__input{
+            @include input();
+
+        }
+        
+        .formulario__dados__radio_texto{
+            @include font-nunito();
+            font-weight: 400;
+
+            font-size: 1rem;
+            line-height: 150%;
+            color: $base-escuro;
+            display: inline-flex;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .formulario__dados__radio{
+            margin-right: 0.62rem;
+        }
+
+
+        .formulario__dados__select{
+            @include input();
+        }
+
+        .formulario__politcs{
+            .formulario__politcs_container{
+                width: 90%;
+                height: 5.62rem;
+
+                .formulario__politcs_itens{
+                    @include font-nunito();
+                    font-weight: 400;
+
+                    font-size: 0.75rem;
+                    color: $base-medio;
+                    list-style: disc;
+
+                }
+                
+
+            }
+
+        }
+        
+        .formulario__button__bt{
+            align-items: center;
+            background: $cor-primaria;
+            color: $branco;
+            border: none;
+            display: flex;
+            flex-direction: row;
+
+            @include font-nunito();
+            font-size: 1rem;
+
+            font-weight: 800;
+            height: 2.5rem;
+            justify-content: center;
+            letter-spacing: 0.04em;
+            line-height: 150%;
+            padding: 0.5rem 1.5rem;
+            text-align: center;
+            text-transform: uppercase;
+            width: 28rem;
+
+            &:hover{
+                background: $cor-secudaria;
+                color: $branco;
+                transition-duration: 0.5s;
+            }
+        }
+
+        
+    }
+    
+
+}
+
+
+
+/*__________________________screens_____________________________________________*/
+
+/*__________________________mobile_____________________________________________*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .hero__container{
+        justify-content: center;
+
+        .formulario{ 
+            width: 90%;
+            margin-top: 0rem;
+            margin-bottom: 2rem;
+
+            .formulario__topo{
+                .formulario__topo__texto{
+                    width: 90%;
+            
+                }
+            }
+            .formulario__dados{
+                width: 90%;
+                margin-left: 1rem;
+                margin-right: 1rem;
+
+                .formulario__button__bt{
+                    width: 90%;
+                }
+            
+                .formulario__button{
+                    display: flex;
+                    justify-content: center;
+                }
+        
+            }
+    
+        }
+    }
+    
+
+
+
+
+
+
+}
+
+/*__________________________tablet_____________________________________________*/
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+    .hero__container{
+        justify-content: center;
+
+        .formulario{ 
+            width: 90%;
+            margin-top: 0rem;
+            margin-bottom: 2rem;
+            grid-column: 2 /span 13;
+
+            .formulario__topo{
+                .formulario__topo__texto{
+
+                    width: 90%;
+            
+                }
+
+            }
+
+            .formulario__dados{
+                width: 90%;
+                margin-left: 1rem;
+                margin-right: 1rem;
+
+                .formulario__button__bt{
+                    width: 90%;
+                }
+            
+                .formulario__button{
+                    display: flex;
+                    justify-content: center;
+                }
+        
+            }
+
+
+    
+        }
+    }
+    
+
+
+
+
+
+
+}
+
+
+/*__________________________notebook_____________________________________________*/
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .hero__container{
+        justify-content: center;
+
+        .formulario{ 
+            width: 90%;
+            margin-top: 0rem;
+            margin-bottom: 2rem;
+            grid-column: 7 / 13;
+
+            .formulario__topo{
+                .formulario__topo__texto{
+
+                    width: 90%;
+            
+                }
+            }
+    
+            .formulario__dados{
+                width: 90%;
+                margin-left: 1rem;
+                margin-right: 1rem;
+
+                .formulario__button__bt{
+                    width: 90%;
+                }
+            
+                .formulario__button{
+                    display: flex;
+                    justify-content: center;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                }
+        
+            }
+           
+    
+        }
+
+
+    }
+    
+
+
+
+
+
+
+}
+
+
+
+/*__________________________telas maiores_____________________________________________*/
+
+@media only screen and (min-width: 1025px){
+
+
+}

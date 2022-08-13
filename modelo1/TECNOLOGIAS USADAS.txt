@@ -1,0 +1,8 @@
+Linguagens
+HTML
+CSS - Flex e Grid
+Javascript - jquery
+
+Metodologias 
+BEM - nomeação de classes
+

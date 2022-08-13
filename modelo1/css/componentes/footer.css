@@ -1,0 +1,93 @@
+
+/* footer*/
+.footer{
+    align-items: center;
+    justify-content: space-between;
+    height: 10rem;
+    background: var(--branco);
+    box-shadow: 0rem -0.06rem 0.75rem rgb(33 36 41 / 14%);
+
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__logo__img{
+    width: 9.37rem;
+}
+
+.footer__redes{
+    display: flex;
+    align-items: center;
+}
+
+.footer__redes__itens{
+    height: 2rem;
+    display: inline-block;
+    padding-left: 0.93rem;
+
+}
+
+
+/*__________________________screens_____________________________________________*/
+
+/*__________________________mobile_____________________________________________*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .footer{
+        height: 100%;
+    }
+
+    .footer__container{
+        justify-content: center;
+    }
+    .footer__redes{
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+
+    
+}
+
+/*__________________________tablet_____________________________________________*/
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+
+    .footer{
+        height: 100%;
+    }
+
+    .footer__container{
+        justify-content: center;
+    }
+    .footer__redes{
+       
+        margin-top: 1.5em;
+    }
+
+
+}
+
+
+/*__________________________notebook_____________________________________________*/
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+
+}
+
+
+
+/*__________________________telas maiores_____________________________________________*/
+
+@media only screen and (min-width: 1025px){
+
+
+}

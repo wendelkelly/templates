@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+	
+	<link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@800;900&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+   
+	<script language="JavaScript" src="js/scripts.js"></script>
+
+	<title>Modelo 2</title>
+</head>
+
+<body>
+
+	<!---- header -->
+	<header class="header">
+		<div class="header__container container">
+			<img class="header__logo" src="img/logowk.png" alt="logomarca do site">
+			<nav class="header__nav">
+
+				<div class="header__navbar">
+					
+
+					<a class="header__navbar__menu-a" href="#home">Home</a>
+
+					<div class="header__navbar__menu-bt">
+
+						<button class="header__navbar__menu-bt__menu">Menu</button>
+
+					</div>
+
+					<div class="header__navbar__menu-bt">
+
+						<button class="header__navbar__menu-bt__menu">Menu</button>
+
+					</div>
+
+					<div class="header__navbar__menu-bt">
+
+						<button class="header__navbar__menu-bt__menu">Menu</button>
+
+					</div>
+
+					<a class="header__navbar__menu-a" href="#">Contato</a>
+
+				</div>
+
+				<div class="header__hamburguer ">
+					<div class="hamburger__menu">
+						<input id="menu__toggle" type="checkbox" />
+						<label class="menu__btn" for="menu__toggle">
+						  <span></span>
+						</label>
+						
+						<ul class="menu__box">
+						<li><img class="header__logo" src="img/logowk.png" alt="logomarca do site"></li>
+						  <li><a class="menu__item" href="#">Home</a></li>
+						  <li><a class="menu__item" href="#">Menu</a></li>
+						  <li><a class="menu__item" href="#">Menu</a></li>
+						  <li><a class="menu__item" href="#">Menu</a></li>
+						  <li><a class="menu__item" href="#">Contato</a></li>
+						</ul>
+					  </div>
+
+
+				</div>
+			
+			</nav>
+
+		</div>
+	</header>
+
+
+	<!---- section HERO-->
+	<section class="hero">
+
+		<div class="container hero__container">
+			<div class="hero__texto">
+				<h1 class="hero__texto__h1">As novas<span class="hero__texto__span">
+						oportunidades</span> para seu negócio</h1>
+				<p class="hero__texto__p">Lorem ipsum dolor sit amet. Ab deserunt pariatur aut obcaecati
+					voluptatem et dignissimos quasi quo
+					saepe pariatur non voluptatum corrupti et totam dolor. Ut libero quidem cum quia numquam.</p>
+			</div>
+
+
+			<div class="formulario" id="formulario">
+				<div class="formulario__topo">
+					<h4 class="formulario__topo__texto">Receba nossas novidades</h4>
+				</div>
+
+				<form class="formulario__dados" name="formHero">
+					<label class="formulario__dados__label" for="nome"><b>Nome completo</b></label><br>
+					<input class="formulario__dados__input" type="text" placeholder="Insira seu nome" name="nome"
+						id="nome" required><br>
+
+
+					<label class="formulario__dados__label" for="email"><b>E-mail</b></label><br>
+					<input class="formulario__dados__input" type="text" placeholder="Insira seu e-mail" name="email"
+						id="email" required onblur="validacaoEmail(formHero.email)"><br>
+
+					<label class="formulario__dados__label" for="tel"><b>Telefone</b></label><br>
+					<input id="tel" class="formulario__dados__input" type="text"
+						placeholder="Insira seu número de telefone com DDD" name="tel"
+						onkeypress="mascaraTel(this, mtel);" onblur="mascaraTel(this, mtel)" required><br>
+
+					<label class="formulario__dados__label" for="cargo"><b>Cargo atual</b></label><br>
+					<select class="formulario__dados__select">
+						<option value="none" selected disabled hidden>Selecione seu cargo</option>
+						<option value="proprietario">Sócio(a) / CEO / Proprietário(a)</option>
+						<option value="dirVendas">Diretor(a) de Vendas</option>
+						<option value="dirOutras">Diretor(a) Outras Áreas</option>
+						<option value="gerMarketing">Gerente de Marketing</option>
+						<option value="coordMarketing">Coordenador(a)/Supervisor(a) de Marketing</option>
+						<option value="coordVendas">Coordenador(a)/Supervisor(a) de Vendas</option>
+						<option value="vendContas">Vendedor(a) / Executivo(a) de Contas</option>
+						<option value="estudante">Estudante</option>
+						<option value="outros">Outros Cargos</option>
+					</select><br>
+
+
+					<label class="formulario__dados__label" for="senha"><b>Senha</b></label><br>
+					<input class="formulario__dados__input" type="password" placeholder="*******" name="senha"
+						id="senha" required><br>
+
+					<label class="formulario__dados__label" for="confirmsenha"><b>Confirme sua senha</b></label><br>
+					<input class="formulario__dados__input" type="password" placeholder="" name="confirmsenha"
+						id="confirmsenha" required> <br>
+
+					<label class="formulario__dados__label" for="meuSite"><b>Site da sua empresa</b></label><br>
+					<input class="formulario__dados__radio" type="radio" id="meuSite" name="meuSite" value="" checked>
+					<p class="formulario__dados__radio_texto">Endereço do site</p> <input
+						class="formulario__dados__input" type="text" id="endSite" name="endSite" /><br>
+					<input class="formulario__dados__radio" type="radio" id="semSite" name="meuSite" value="semSite">
+					<p class="formulario__dados__radio_texto">Não possui site</p> <br>
+
+
+					<div class="formulario__politcs">
+						<ul class="formulario__politcs_container">
+							<li class="formulario__politcs_itens">Ao criar minha conta estou de acordo com os termos de
+								uso do software e política de
+								privacidade.</li>
+							<li class="formulario__politcs_itens">Ao preencher o formulário, concordo em receber
+								comunicações de acordo com meus
+								interesses.</li>
+							<li class="formulario__politcs_itens">*Você pode alterar suas permissões de comunicação a
+								qualquer tempo.</li>
+						</ul>
+					</div>
+
+					<div class="formulario__button">
+						<button class="formulario__button__bt button" id="submit" type="submit">Enviar</button>
+					</div>
+				</form>
+
+			</div>
+
+		</div>
+
+	</section>
+
+	<!---- section Together -->
+	<section class="together">
+		<div class="container together__container">
+			<div class="together__texto">
+				<h3 class="together__texto__h3">Lorem ipsum dolor sit amet!</h3>
+				<p class="together__texto__p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. <br>
+					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. </p>
+			</div>
+
+		</div>
+
+	</section>
+
+	<!---- section List -->
+
+	<section class="list">
+		<div class="container list__container">
+			<div class="list_imagem">
+				<img class="list_imagem_img"src="img/img1.jpg" alt="mulheres conversando">
+			</div>
+
+			<div class="list__texto">
+				<h3 class="list__texto__titulo">Nullam dictum felis eu pede mollis pretium.</h3>
+				<p class="list__texto__subtitulo">Nullam dictum felis eu pede mollis pretium.</p>
+				<ul class="list__texto__lista">
+					<li class="list__texto__lista__itens"><span class="list__texto__lista__destaque">Lorem ipsum dolor sit amet. </span>Nullam dictum felis eu pede mollis pretium. Integer
+						tincidunt.</li>
+					<li class="list__texto__lista__itens"><span class="list__texto__lista__destaque">Lorem ipsum dolor sit amet. </span> Nullam dictum felis eu pede mollis pretium. Integer
+						tincidunt.</li>
+					<li class="list__texto__lista__itens"><span class="list__texto__lista__destaque">Lorem ipsum dolor sit amet. </span>Nullam dictum felis eu pede mollis pretium. Integer
+						tincidunt.</li>
+
+				</ul>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+
+	<!---- section cards-->
+	<section class="cards">
+		<div class="container cards__container__titulo">
+			<div class="cards__titulo">
+				<h2  class="cards__titulo__h2">Lorem ipsum dolor sit amet</h2>
+			</div>
+
+		</div>
+
+		<div class="container cards__container">
+			<div class="cards__box">
+				<div class="cards__itens">
+					<img class="cards_itens_icons" src="img/icons/chartline.svg" alt="icone">
+					<p class="cards_itens_title">Nullam quis ante</p>
+					<p class="cards_itens_texto">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+						ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+						consequat massa quis enim.</p>
+				</div>
+
+				<div class="cards__itens">
+					<img class="cards_itens_icons" src="img/icons/chartnetwork.svg" alt="icone">
+					<p class="cards_itens_title">Nullam quis ante</p>
+					<p class="cards_itens_texto">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+						ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+						consequat massa quis enim.</p>
+				</div>
+
+				<div class="cards__itens">
+					<img class="cards_itens_icons" src="img/icons/chart-pie.svg" alt="icone">
+					<p class="cards_itens_title">Nullam quis ante</p>
+					<p class="cards_itens_texto">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+						ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+						consequat massa quis enim.</p>
+				</div>
+
+				<div class="cards__itens">
+					<img class="cards_itens_icons" src="img/icons/globe.svg" alt="icone">
+					<p class="cards_itens_title">Nullam quis ante</p>
+					<p class="cards_itens_texto">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+						ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+						consequat massa quis enim.</p>
+				</div>
+
+				<div class="cards__itens">
+					<img class="cards_itens_icons" src="img/icons/star.svg" alt="icone">
+					<p class="cards_itens_title">Nullam quis ante</p>
+					<p class="cards_itens_texto">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+						ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+						consequat massa quis enim.</p>
+				</div>
+
+				<div class="cards__itens">
+					<img class="cards_itens_icons" src="img/icons/bullhorn.svg" alt="icone">
+					<p class="cards_itens_title">Nullam quis ante</p>
+					<p class="cards_itens_texto">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+						ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+						consequat massa quis enim.</p>
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<!---- section Video-->
+	<section class="video">
+		<div class=" container video__container">
+			<div class="video__titulo">
+				<h3 class="video__titulo__h3">Cum sociis natoque penatibus et magnis dis parturient montes</h3>
+				<a  class="video__button__link" href="https://www.youtube.com/watch?v=vOXZkm9p_zY" target="_blank"><button href="https://www.youtube.com/watch?v=vOXZkm9p_zY" target="_blank" class="video__button button">ASSISTIR</button></a>
+			</div>
+
+			<div class="video__thumb">
+				<a href="https://www.youtube.com/watch?v=vOXZkm9p_zY" target="_blank"><img  class="video__thumb_img" src="img/img-video-thumbnail.jpg"  alt="maquina de fotografia em cima de uma mesa"></a>
+
+
+		</div>
+		
+
+	</section>
+
+	<!---- section CTA-->
+	<section class="cta">
+		<div class="container cta__container">
+			<div class="cta__bloco">
+				<h2 class="cta__bloco__titulo">Cum sociis natoque penatibus et magnis dis parturient montes</h2>
+				<p class="cta__bloco__texto" >Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+					felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+				<a class="cta__bloco__button" href='#formulario'><button class="cta__bloco__button__bt button ">Enviar</button></a>
+			</div>
+
+		</div>
+
+	</section>
+
+
+	<!---- footer-->
+	<footer class="footer">
+		<div class="container footer__container">
+			<div class="footer__logo">
+				<img class="footer__logo__img" src="img/logowk.png" alt="logomarca do site">
+			</div>
+
+			<div class="footer__redes" >
+				<a href="https://www.facebook.com" target="_blank">
+					<div class="footer__redes__itens">
+						<img src="img/social/facebook/default.svg" alt="logomarca do facebook">
+					</div>
+				</a>
+
+				<a href="https://www.instagram.com" target="_blank">
+					<div class="footer__redes__itens">
+						<img src="img/social/instagram/default.svg" alt="logomarca do instagram">
+					</div>
+				</a>
+
+				<a href="https://www.linkedin.com" target="_blank">
+					<div class="footer__redes__itens">
+						<img src="img/social/linkedin/default.svg" alt="logomarca do linkedin">
+					</div>
+				</a>
+
+				<a href="https://www.twitter.com" target="_blank">
+					<div class="footer__redes__itens">
+						<img src="img/social/twitter/default.svg" alt="logomarca do twitter">
+					</div>
+				</a>
+
+				<a href="https://www.youtube.com" target="_blank">
+					<div class="footer__redes__itens">
+						<img src="img/social/youtube/default.svg" alt="logomarca do youtube">
+					</div>
+				</a>
+
+			</div>
+
+		</div>
+
+	</footer>
+
+</body>
+
+</html>
